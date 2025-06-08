@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.env
+.venv/
+venv/
+.env.*
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# React / Node
+node_modules/
+build/
+dist/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Jupyter / Notebooks (if used)
+.ipynb_checkpoints/
+
+# Frontend cache
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# PDF & Output
+*.pdf
+*.csv
+*.xlsx
+*.zip
+*.png
+*.jpg
