@@ -1,10 +1,8 @@
 from fastapi import FastAPI
+from routers import screen  # Add this
 
-app = FastAPI(
-  title="DealLab API",
-  description="AI-powered M&A analysis toolkit",
-  version="1.0.0"
-)
+app = FastAPI()
+app.include_router(screen.router)
 
 @app.get("/")
 def root():
