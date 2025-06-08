@@ -1,10 +1,12 @@
 from fastapi import FastAPI
-from routers import screen, comps  # ✅ Make sure this line exists
+from routers import screen, comps, model, strategy
 
 app = FastAPI()
 
 app.include_router(screen.router)
-app.include_router(comps.router)  # ✅ Register comps here
+app.include_router(comps.router)
+app.include_router(model.router)
+app.include_router(strategy.router)
 
 @app.get("/")
 def root():
